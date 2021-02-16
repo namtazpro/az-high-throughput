@@ -1,6 +1,6 @@
-<mxfile modified="2021-02-16T17:03:26.751Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.68" etag="n7_PvmYMLtpiezWiyP8l" version="14.3.0" type="github" pages="2">
+<mxfile modified="2021-02-16T17:41:01.944Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.68" etag="sG4V6tovXA1WoEil8noz" version="14.3.0" type="github" pages="2">
   <diagram id="d1ab7348-05c3-a1e3-ca4d-12c340fd6b49" name="Page-1">
-    <mxGraphModel dx="1122" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1122" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -27,6 +27,16 @@
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-8" value="SDK" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="210.5" y="216" width="39.5" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-79" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VJ8mxgtMJN1tNtj2vrMO-78">
+          <mxGeometry x="0.2633" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-9" value="" style="whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="169.5" y="300" width="100" height="200" as="geometry" />
@@ -92,19 +102,16 @@
           <mxGeometry x="400" y="125" width="31" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-30" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
-          <mxGeometry x="370" y="356.5" width="31" height="50" as="geometry" />
+          <mxGeometry x="369" y="345" width="31" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-31" value="x 4" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="455" y="386.5" width="30" height="20" as="geometry" />
+          <mxGeometry x="320" y="390" width="30" height="20" as="geometry" />
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-32" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
-          <mxGeometry x="380" y="366.5" width="31" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-33" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
-          <mxGeometry x="390" y="376.5" width="31" height="50" as="geometry" />
+          <mxGeometry x="369" y="283.5" width="31" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-34" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
-          <mxGeometry x="400" y="386.5" width="31" height="50" as="geometry" />
+          <mxGeometry x="369" y="452.5" width="31" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-35" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
           <mxGeometry x="370" y="595" width="31" height="50" as="geometry" />
@@ -133,8 +140,70 @@
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-45" value="x 2" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="431" y="840" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-46" value="10K rp/s per server" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="540" y="50" width="120" height="20" as="geometry" />
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-46" value="&lt;b&gt;Servers&lt;/b&gt;:&lt;br&gt;10K rps on a server then add a server&lt;br&gt;max 20K rps per server&lt;br&gt;200K concurrent connections per machine&lt;br&gt;&lt;br&gt;Network:&lt;br&gt;90K rps peak per day (summary over all machines)&lt;br&gt;3 billions requests / day (summary over all machines)" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="10" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-48" value="Pre-collector" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
+          <mxGeometry x="600" y="115" width="31" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-50" value="2 per 10 servers" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="171" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-53" value="Pre-collector" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
+          <mxGeometry x="600" y="191" width="31" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.694;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-33" target="VJ8mxgtMJN1tNtj2vrMO-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-63" value="fetch(ZeroMQ)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VJ8mxgtMJN1tNtj2vrMO-61">
+          <mxGeometry x="-0.2481" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.984;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-54" target="VJ8mxgtMJN1tNtj2vrMO-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.855;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-54" target="VJ8mxgtMJN1tNtj2vrMO-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.968;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-54" target="VJ8mxgtMJN1tNtj2vrMO-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.968;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-54" target="VJ8mxgtMJN1tNtj2vrMO-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-77" value="fetch(ZeroMQ)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VJ8mxgtMJN1tNtj2vrMO-74">
+          <mxGeometry x="-0.5039" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-54" value="Pre-collector" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
+          <mxGeometry x="610" y="345" width="31" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-55" value="Pre-collector (redundancy)" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
+          <mxGeometry x="610" y="433" width="31" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-57" value="fetch (rsync)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.968;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-56" target="VJ8mxgtMJN1tNtj2vrMO-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.855;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJ8mxgtMJN1tNtj2vrMO-56" target="VJ8mxgtMJN1tNtj2vrMO-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="420" />
+              <mxPoint x="720" y="461" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-60" value="fetch(rsync)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VJ8mxgtMJN1tNtj2vrMO-59">
+          <mxGeometry x="-0.2857" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-56" value="Collector" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
+          <mxGeometry x="820" y="376.5" width="31" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-33" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
+          <mxGeometry x="369" y="399" width="31" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
