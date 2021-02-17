@@ -1,4 +1,4 @@
-<mxfile modified="2021-02-17T10:02:02.864Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.68" etag="2RO0tXdQfsRO0RIBd9-u" version="14.3.0" type="github" pages="2">
+<mxfile modified="2021-02-17T10:35:03.473Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.68" etag="uejPuDVlG7Bfg_Mt3Y_M" version="14.3.0" type="github" pages="2">
   <diagram id="d1ab7348-05c3-a1e3-ca4d-12c340fd6b49" name="Page-1">
     <mxGraphModel dx="1122" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -209,7 +209,7 @@
           <mxGeometry x="736.8333333333333" y="454.6875" width="21.791666666666742" height="50.8125" as="geometry" />
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-82" value="&lt;ol&gt;&lt;li&gt;OPERATION:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;What and how do you monitor today?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;RELIABILITY:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Provide SLA with sdk? What are the measured indicators?&lt;/li&gt;&lt;li&gt;What RPO? No data loss?&lt;/li&gt;&lt;li&gt;What RTO?&lt;/li&gt;&lt;li&gt;Retry on sdk side?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;SECURITY:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;What security do you need? How do you protect today e.g. DDOS&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;PERFORMANCE:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;90K rps per peak /d is that for all countries?&lt;/li&gt;&lt;li&gt;Growth margin needed?&lt;/li&gt;&lt;li&gt;24/7/365 traffic?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;COST:&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;does the http endpoint provide the data or is just called by the sdk, what puts the cookie data on client side&lt;/li&gt;&lt;li&gt;https? Where is SSL Termination handled?&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="910" y="240" width="620" height="290" as="geometry" />
+          <mxGeometry x="890" y="225" width="620" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
