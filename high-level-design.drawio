@@ -1,4 +1,4 @@
-<mxfile modified="2021-02-16T17:41:01.944Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.68" etag="sG4V6tovXA1WoEil8noz" version="14.3.0" type="github" pages="2">
+<mxfile modified="2021-02-17T10:02:02.864Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36 Edg/88.0.705.68" etag="2RO0tXdQfsRO0RIBd9-u" version="14.3.0" type="github" pages="2">
   <diagram id="d1ab7348-05c3-a1e3-ca4d-12c340fd6b49" name="Page-1">
     <mxGraphModel dx="1122" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
@@ -140,7 +140,7 @@
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-45" value="x 2" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="431" y="840" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-46" value="&lt;b&gt;Servers&lt;/b&gt;:&lt;br&gt;10K rps on a server then add a server&lt;br&gt;max 20K rps per server&lt;br&gt;200K concurrent connections per machine&lt;br&gt;&lt;br&gt;Network:&lt;br&gt;90K rps peak per day (summary over all machines)&lt;br&gt;3 billions requests / day (summary over all machines)" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-46" value="&lt;b&gt;Servers&lt;/b&gt;:&lt;br&gt;10K rps on a server then add a server&lt;br&gt;max 20K rps per server&lt;br&gt;200K concurrent connections per machine&lt;br&gt;&lt;br&gt;&lt;b&gt;Network&lt;/b&gt;:&lt;br&gt;90K rps peak per day (summary over all machines)&lt;br&gt;3 billions requests / day (summary over all machines)" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="760" y="10" width="300" height="120" as="geometry" />
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-48" value="Pre-collector" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
@@ -204,6 +204,12 @@
         </mxCell>
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-33" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Non_Azure_Machine.svg;" vertex="1" parent="1">
           <mxGeometry x="369" y="399" width="31" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-80" value="" style="shape=stencil(nVfbchsxCP0avzKSEEJ6Ttv/yEycxtM0zjjp7e+L665jkPc007f1GoSAcw7shm9eHm6ft5uSXl4P+y/bH7u714cNf9iUsnt62B52r/a04Y8bvrnfH7afD/tvT3en38+3R8vj09f99+MJP09+TKkdnUr6dXqRK/H48+bTyf5x93Rhnyglb28n9HX7Qi3YJ+qybp8Lib9QJ1VwfqKizl5JwfmcqYqzF2pt3b5WGuzsmWpdt5dOY/iEqYL6aKHcnb0lBO7fmZoE+78duWo/CnUO9h3kO6x82dkXKhn0K02IqAuk1gLUEhGRAOLmDHKjASDRdTnvnEKlwsAhU6u+x/YGJK0aWcOdBHRBmdjncMQVcGiDus9BMmWQdGukPoIocQEOQt0TRwYpQKo5sG90y5BqrZL6TjcrA3LgBZpnh7qw9bpDmSIIJVSlTEOig4IqWU16cGiUwJXEsNljBHF8sIc3NT4J+fm/NZk2yAcSNBJwb1Nx8fYKAWqyWzwFBpR142yQxWz4BLS3vwMpLWQDrcpTq/IZse9M2aROgFRn46yPYEVFlDHpD9rIBaLHihiGDQ9iUCWWOA2qJQ36UK0PngFSKAGts/M0CIsGfAaHPlEmLyPuOgMS5aATJgQAe5Im2jfY6ToW7J8dlAqqUotD0xySg8b/kNKaqV5Ch5EAIK7mKKF9LLxea2/xmO4dijQr9RQd0CjjthTi4koZRbD9p0UHBXhgY6FH3EhLO66zRqOq2wqQQZWKTA4MNwTjeUDcaHBpMSKH6To6pBnXOL+HMR9BNC99fVuL8GY388xCoHlsq6lODgiu805x3A5Bq23NCWAaQgNEUFmG6UXn0OeBVsqhrhkKpKalJhfoE9C5ec35B77nspoDmmzWuNHilRAhDButx6QriGDoSxzL2gCW5kFlhEBT4R3S5xT1fvf4GFTVHuJHqr06feDyx98=);fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="736.8333333333333" y="454.6875" width="21.791666666666742" height="50.8125" as="geometry" />
+        </mxCell>
+        <mxCell id="VJ8mxgtMJN1tNtj2vrMO-82" value="&lt;ol&gt;&lt;li&gt;OPERATION:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;What and how do you monitor today?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;RELIABILITY:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Provide SLA with sdk? What are the measured indicators?&lt;/li&gt;&lt;li&gt;What RPO? No data loss?&lt;/li&gt;&lt;li&gt;What RTO?&lt;/li&gt;&lt;li&gt;Retry on sdk side?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;SECURITY:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;What security do you need? How do you protect today e.g. DDOS&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;PERFORMANCE:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;90K rps per peak /d is that for all countries?&lt;/li&gt;&lt;li&gt;Growth margin needed?&lt;/li&gt;&lt;li&gt;24/7/365 traffic?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;COST:&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;does the http endpoint provide the data or is just called by the sdk, what puts the cookie data on client side&lt;/li&gt;&lt;li&gt;https? Where is SSL Termination handled?&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="910" y="240" width="620" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
