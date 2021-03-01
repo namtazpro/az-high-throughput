@@ -1,6 +1,6 @@
-<mxfile modified="2021-03-01T12:55:56.868Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.74" etag="luJ5KWqyXqd2BUGoat8r" version="14.4.3" type="github" pages="3">
-  <diagram id="d1ab7348-05c3-a1e3-ca4d-12c340fd6b49" name="Page-1">
-    <mxGraphModel dx="1122" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+<mxfile modified="2021-03-01T13:00:06.432Z" host="app.diagrams.net" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.74" etag="iSLgvtHo2tgEG-i6u89E" version="14.4.3" type="github" pages="4">
+  <diagram id="d1ab7348-05c3-a1e3-ca4d-12c340fd6b49" name="Infra AS-IS">
+    <mxGraphModel dx="2291" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -211,10 +211,99 @@
         <mxCell id="VJ8mxgtMJN1tNtj2vrMO-82" value="&lt;ol&gt;&lt;li&gt;OPERATION:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;What and how do you monitor today?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;RELIABILITY:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Provide SLA with sdk? What are the measured indicators?&lt;/li&gt;&lt;li&gt;What RPO? No data loss?&lt;/li&gt;&lt;li&gt;What RTO?&lt;/li&gt;&lt;li&gt;Retry on sdk side?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;SECURITY:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;What security do you need? How do you protect today e.g. DDOS&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;PERFORMANCE:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;90K rps per peak /d is that for all countries?&lt;/li&gt;&lt;li&gt;Growth margin needed?&lt;/li&gt;&lt;li&gt;24/7/365 traffic?&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;COST:&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;does the http endpoint provide the data or is just called by the sdk, what puts the cookie data on client side&lt;/li&gt;&lt;li&gt;https? Where is SSL Termination handled?&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="890" y="225" width="620" height="290" as="geometry" />
         </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-1" value="Client SDK&lt;br&gt;(Browser, smartTV,&lt;br&gt;IOS, Android)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="29.5" y="980" width="119" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-2" value="GET&amp;nbsp; request (NO cookie)" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;strokeColor=#330000;" edge="1" parent="qq6-1kCjhT8deoRXEBXr-1" target="qq6-1kCjhT8deoRXEBXr-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="59" y="90" as="sourcePoint" />
+            <mxPoint x="139" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-3" value="Cookie" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="442.5" y="980" width="119" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qq6-1kCjhT8deoRXEBXr-3">
+          <mxGeometry x="53.5" y="230" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-5" value="HTTP endpoint" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="238.5" y="980" width="119" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qq6-1kCjhT8deoRXEBXr-5">
+          <mxGeometry x="55" y="88" width="10" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qq6-1kCjhT8deoRXEBXr-5">
+          <mxGeometry x="54" y="180" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qq6-1kCjhT8deoRXEBXr-5">
+          <mxGeometry x="53.5" y="280" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-9" value="get cookie data" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#330000;" edge="1" parent="qq6-1kCjhT8deoRXEBXr-5" target="qq6-1kCjhT8deoRXEBXr-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="60" y="230" as="sourcePoint" />
+            <mxPoint x="140" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-10" value="202 - Set-cookie + empty gif" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;strokeColor=#330000;" edge="1" parent="1" source="qq6-1kCjhT8deoRXEBXr-6" target="qq6-1kCjhT8deoRXEBXr-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="223.5" y="1144" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-11" value="GET request (IS Cookie)" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;strokeColor=#330000;" edge="1" parent="1" target="qq6-1kCjhT8deoRXEBXr-7">
+          <mxGeometry x="-0.122" relative="1" as="geometry">
+            <mxPoint x="87.5" y="1160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="127.5" y="1160" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-12" value="data streaming platform" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="634" y="980" width="119" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qq6-1kCjhT8deoRXEBXr-12">
+          <mxGeometry x="53.5" y="330" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-14" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;strokeColor=#330000;" edge="1" parent="qq6-1kCjhT8deoRXEBXr-12" source="qq6-1kCjhT8deoRXEBXr-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-336.5" y="387" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-15" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#330000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="497.5" y="1260" as="sourcePoint" />
+            <mxPoint x="296.5" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-16" value="send cookie data" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#330000;exitX=0.55;exitY=1.03;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qq6-1kCjhT8deoRXEBXr-8" target="qq6-1kCjhT8deoRXEBXr-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="617.5" y="1310" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-17" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#330000;" edge="1" parent="1" source="qq6-1kCjhT8deoRXEBXr-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="296.5" y="1395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-18" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="292.75" y="1370" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-19" value="202 - return empty gif" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#330000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="297.5" y="1420" as="sourcePoint" />
+            <mxPoint x="87.5" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-20" value="thousands of client sessions. 50K rps" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];strokeColor=#6c8ebf;rounded=0;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="1210" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qq6-1kCjhT8deoRXEBXr-21" value="- Returns 202 &lt;br&gt;- no caching&lt;br&gt;- empty gif most times&lt;br&gt;- JavaScript for survey" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];strokeColor=#6c8ebf;rounded=0;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="127.75" y="1450" width="140" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="iHu4Xxs7cBfBsBqKezAi" name="Page-2">
+  <diagram id="iHu4Xxs7cBfBsBqKezAi" name="Requirements">
     <mxGraphModel dx="1949" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="qnX381IK_lm48c5qhEtr-0" />
@@ -669,11 +758,14 @@
         <mxCell id="hmwHKT2tuE6w_n_T32d--44" value="" style="shape=stencil(lVddb9swDPw1fiUkURSl5677HwWaLcG2pkizr38/eoa8UHYO65vj6ALx7nhkJn54Oz69HqYU3q6X85fDz9Pz9Tjxhyml08vxcDld7Wnix4kfPp0vh8+X8/eX5+Xz69N8cn76dv4x/8KvBdcScZxRKfxe3gQK4e+Lj8v5r6cXeD6SxvecZ9IEzkdK/nwhRucDcfX3sQu1+4BaqWUPqFQqABQSD0hCggCZIvuSE1XAabWaxQFyoAgAWonVA5QYFK1C2bMkmaoAQKISvAyJEt8HlNZtsAKEuACAjsYolQKg1X6v+qI1UAXWKzwqrUwMaC1xVNp4U3AlMed44UyZCHSQMipdzb9AB+FR6ZogrRKoFQ/IpACQV9ZXgFIAtGbpJa6ARlEBIPWG7IC5ydGVYudkBTAGbEKgCdSBG+XkAaW7ax9QKXtam70BXmIl8Q3UGiUMCGkEoFzaAmLA2b1TRMPe2PJau73+V2ql9i4zmRBonmztalLDDoqUfVObmRrqUaE0XCnhFDCdBuWwvy1KR2+YcAiwiT5ruQBqsCjVIWdqH0r7eR+p+JllY68hgHSrrQDLSgRQqkPO5D5j9qdiIB2K5j7F9gE2s4ZgMqLB7jBfwAtnk1iADsZJGMI1kAC3WpQ2X7Q2EuBW07V5Wm2iVECrWa3yCIhoIePRGop3B+sv8YNaCxXAUtu0qAEC0OEmt24GLzup7eHfCrtsv+t393ZbWx3bpjE1379Iyn223jRmQoDNdmt9hrZP26556DOlDPSNm73KTIg2t6hjBFtjChhtUcaQnxdYJBePY8T6rAKW4mavsj5Dw3O7VllbgJoL5cGhlQSpMEaRGbSCivfs6fMa2dMexn9j9mr5J8ePfwA=);fillColor=none;align=left;rotation=-90;" vertex="1" parent="qnX381IK_lm48c5qhEtr-1">
           <mxGeometry x="-490" y="3076.74" width="13" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="hmwHKT2tuE6w_n_T32d--46" value="Each customer have their own solution which consists of:&lt;br&gt;- SDK (can be customised per customer)&lt;br&gt;- Measurement endpoint (generic)&lt;br&gt;- Data processing (can be customised per customer)" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="qnX381IK_lm48c5qhEtr-1">
+          <mxGeometry x="470" y="2460" width="320" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="vxZ9gStCN_i3mOea5Fnl" name="Page-3">
-    <mxGraphModel dx="1949" dy="1884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1949" dy="1932" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="T1OTcEkx0h1XsMStHAVg-0" />
         <mxCell id="T1OTcEkx0h1XsMStHAVg-1" parent="T1OTcEkx0h1XsMStHAVg-0" />
@@ -739,6 +831,103 @@
         </mxCell>
         <mxCell id="i8Fm53De4QaARvlknaGV-23" value="AppInsights" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="T1OTcEkx0h1XsMStHAVg-1" vertex="1">
           <mxGeometry x="261" y="-60" width="80" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XfM2Smk7hk89JKse_i27" name="Page-4">
+    <mxGraphModel dx="1949" dy="-406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-0" />
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-1" parent="qAGf-qyE9xMyHXPZqJz0-0" />
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-2" value="Client SDK&lt;br&gt;(Browser, smartTV,&lt;br&gt;IOS, Android)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry x="-233.5" y="1380" width="119" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-3" value="GET&amp;nbsp; request (NO cookie)" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-2" target="qAGf-qyE9xMyHXPZqJz0-6">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="59" y="90" as="sourcePoint" />
+            <mxPoint x="139" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-4" value="Cookie" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry x="179.5" y="1380" width="119" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-4">
+          <mxGeometry x="53.5" y="230" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-6" value="HTTP endpoint" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry x="-24.5" y="1380" width="119" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-6">
+          <mxGeometry x="55" y="88" width="10" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-6">
+          <mxGeometry x="54" y="180" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-6">
+          <mxGeometry x="53.5" y="280" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-10" value="get cookie data" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-6" target="qAGf-qyE9xMyHXPZqJz0-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="60" y="230" as="sourcePoint" />
+            <mxPoint x="140" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-11" value="202 - Set-cookie + empty gif" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-1" source="qAGf-qyE9xMyHXPZqJz0-7" target="qAGf-qyE9xMyHXPZqJz0-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-39.5" y="1544" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-12" value="GET request (IS Cookie)" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-1" target="qAGf-qyE9xMyHXPZqJz0-8">
+          <mxGeometry x="-0.122" relative="1" as="geometry">
+            <mxPoint x="-175.5" y="1560" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="-135.5" y="1560" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-13" value="data streaming platform" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry x="371" y="1380" width="119" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-13">
+          <mxGeometry x="53.5" y="330" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-15" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-13" source="qAGf-qyE9xMyHXPZqJz0-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-336.5" y="387" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-16" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="234.5" y="1660" as="sourcePoint" />
+            <mxPoint x="33.5" y="1660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-17" value="send cookie data" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#330000;exitX=0.55;exitY=1.03;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-1" source="qAGf-qyE9xMyHXPZqJz0-9" target="qAGf-qyE9xMyHXPZqJz0-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="354.5" y="1710" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-18" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-1" source="qAGf-qyE9xMyHXPZqJz0-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="33.5" y="1795" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#ffffff;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry x="29.75" y="1770" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-20" value="202 - return empty gif" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#330000;" edge="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="34.5" y="1820" as="sourcePoint" />
+            <mxPoint x="-175.5" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-21" value="thousands of client sessions. 50K rps" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];strokeColor=#6c8ebf;rounded=0;fillColor=#dae8fc;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry x="-413" y="1610" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qAGf-qyE9xMyHXPZqJz0-22" value="- Returns 202 &lt;br&gt;- no caching&lt;br&gt;- empty gif most times&lt;br&gt;- JavaScript for survey" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];strokeColor=#6c8ebf;rounded=0;fillColor=#dae8fc;" vertex="1" parent="qAGf-qyE9xMyHXPZqJz0-1">
+          <mxGeometry x="-135.25" y="1850" width="140" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
