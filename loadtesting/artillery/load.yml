@@ -1,0 +1,9 @@
+config:
+  target: 'https://func-ingestmeasure-prem.azurewebsites.net/api/Function1?code=3PXIkcYozXNIwaR9H9lNx/g6xDExvgxVdyauPdOZIKqHQJMNM2jh7Q=='
+  phases:
+    - duration: 10
+      arrivalRate: 100
+scenarios:
+  - flow:
+      - get:
+          url: "https://func-ingestmeasure-prem.azurewebsites.net/api/Function1?code=3PXIkcYozXNIwaR9H9lNx/g6xDExvgxVdyauPdOZIKqHQJMNM2jh7Q=="
