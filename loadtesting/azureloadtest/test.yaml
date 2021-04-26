@@ -1,8 +1,0 @@
-version: v0.1
-testName: test
-testPlan: .vscode/Test/test.jmx
-#configurationFiles:
-#    - '.vscode/Test/*.csv'
-description: 'test Test Run'
-engineInstances: 100
-engineSize: M
