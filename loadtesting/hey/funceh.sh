@@ -24,12 +24,15 @@ az container logs -g $RG --name loadtest03
 az container list -o table
 
 # Use For Loop
-for value in {1..49}
+for value in {4..7}
 do
     #az container create -g $RG --name loadtest$value --image kevingbb/hey:v1 --restart-policy Never --no-wait --command-line "/hey -n 10 -c 2 -m GET -T 'application/json' https://funcehtest01.azurewebsites.net/api/httpgettest?code=a/FB/hXxXtaPclZa5kqL/V0CMXh2Heye85cXjt3max4IawBvcF0gZg==&name=Fred" &
     
+    #AKS plan
+    az container create -g $RG -l northeurope --name loadtest$value --image virouet/loadtest:v1 --cpu 4 --memory 8 --restart-policy Never --no-wait --command-line "/hey -z 5m -c 40 -m GET -T 'application/json' https://http-eventhub.labhome.biz/" > /dev/null &
+
     #Premium Function plan
-    az container create -g $RG -l northeurope --name loadtest$value --image virouet/loadtest:v1 --cpu 4 --memory 8 --restart-policy Never --no-wait --command-line "/hey -z 5m -c 40 -m GET -T 'application/json' https://func-ingestion-premium.azurewebsites.net/api/measure_session?code=tBW3ag6lmc6BYDYeiozQhbGYrlDpgZVDe1BZtMJh7vaH62J1uoMtpw==&name=${value}" > /dev/null &
+    #az container create -g $RG -l northeurope --name loadtest$value --image virouet/loadtest:v1 --cpu 4 --memory 8 --restart-policy Never --no-wait --command-line "/hey -z 5m -c 40 -m GET -T 'application/json' https://func-ingestion-premium.azurewebsites.net/api/measure_session?code=tBW3ag6lmc6BYDYeiozQhbGYrlDpgZVDe1BZtMJh7vaH62J1uoMtpw==&name=${value}" > /dev/null &
 
     #App Service Function plan
     #az container create -g $RG -l northeurope --name loadtest$value --image virouet/loadtest:v1 --cpu 4 --memory 8 --restart-policy Never --no-wait --command-line "/hey -z 10m -c 40 -m GET -T 'application/json' https://func-ingestion-appservice.azurewebsites.net/api/measure_session?code=tBW3ag6lmc6BYDYeiozQhbGYrlDpgZVDe1BZtMJh7vaH62J1uoMtpw==&name=${value}" > /dev/null &

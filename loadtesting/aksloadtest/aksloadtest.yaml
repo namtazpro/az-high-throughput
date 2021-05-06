@@ -1,0 +1,8 @@
+version: v0.1
+testName: aksloadtest
+testPlan: loadtesting/aksloadtest/aksloadtest.jmx
+configurationFiles:
+    - 'loadtesting/aksloadtest/aksloadtest66.csv'
+description: 'aksloadtest Test Run'
+engineInstances: 20
+engineSize: M
