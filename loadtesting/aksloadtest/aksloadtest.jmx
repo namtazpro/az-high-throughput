@@ -33,7 +33,7 @@
         <longProp name="ThreadGroup.start_time">1515063650000</longProp>
         <longProp name="ThreadGroup.end_time">1515063650000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">240</stringProp>
+        <stringProp name="ThreadGroup.duration">600</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="TestPlan.comments">This thread group contains the users simulating the GET request.</stringProp>
@@ -277,7 +277,7 @@
         <stringProp name="TestPlan.comments">This is used to make the URL dynamic.</stringProp>
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding"></stringProp>
-        <stringProp name="filename">aksloadtest66.csv</stringProp>
+        <stringProp name="filename">aksloadtest68.csv</stringProp>
         <boolProp name="ignoreFirstLine">true</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
